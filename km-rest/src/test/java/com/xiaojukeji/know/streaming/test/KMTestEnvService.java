@@ -79,4 +79,8 @@ public abstract class KMTestEnvService {
     protected String zookeeperUrl() {
         return kafkaTestContainer.getZKUrl();
     }
+
+    protected int jmxPort() {
+        return kafkaTestContainer.getJmxPort();
+    }
 }
